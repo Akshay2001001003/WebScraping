@@ -9,15 +9,15 @@ password="12",
 host="localhost",
 port= '5432'
 )
+cursor_obj = con.cursor()
 response = requests.get('https://www.spinny.com/blog/index.php/top-selling-car-brands-in-india/')
+cursor_obj.execute("DELETE FROM Car_Brand")
 html_content = response.text
 soup = BeautifulSoup(html_content, 'html.parser')
-# print(soup)
+
 table = soup.find('table', class_='wptb-preview-table')
 table_row=table.findAll('tr')
-cursor_obj = con.cursor()
-# cursor_obj.execute("SELECT * FROM car_brand")
-cursor_obj.execute("DELETE FROM Car_Brand")
+
 for row in table_row[1:]:
     cells = row.find_all('td')
     brand_name = cells[0].get_text(strip=True)
