@@ -12,9 +12,10 @@ port= '5432'
 cursor_obj = con.cursor()
 response = requests.get('https://www.spinny.com/blog/index.php/top-selling-car-brands-in-india/')
 cursor_obj.execute("DELETE FROM Car_Brand")
+
+
 html_content = response.text
 soup = BeautifulSoup(html_content, 'html.parser')
-
 table = soup.find('table', class_='wptb-preview-table')
 table_row=table.findAll('tr')
 
