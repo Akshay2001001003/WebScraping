@@ -1,4 +1,4 @@
-Car Brand Data Scraper and Database Updater
+###Car Brand Data Scraper and Database Updater
 This Python script scrapes data from a specific webpage, processes it, and updates a PostgreSQL database with the retrieved information. Additionally, it exports the data to a CSV file for further analysis or storage.
 
 Overview
