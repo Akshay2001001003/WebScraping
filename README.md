@@ -19,11 +19,36 @@ The script performs the following tasks:
 - psycopg2 (PostgreSQL adapter)
 - PostgreSQL
 
-#### Usage
+## Installation
 
-**Install Dependencies:**
+1. Clone the repository:
 
-```bash
-pip install beautifulsoup4 requests psycopg2
-```
+    ```bash
+    git clone https://github.com/Akshay2001001003/WebScraping.git
+    ```
+
+2. Install dependencies:
+
+    ```bash
+    pip install beautifulsoup4 requests psycopg2
+    ```
+
+    Additionally, ensure that PostgreSQL is installed on your system. If not, follow the [official installation instructions](https://www.postgresql.org/download/).
+
+## Usage
+
+1. Navigate to the project directory:
+
+    ```bash
+    cd WebScraping
+    ```
+
+2. Run the scraping script:
+
+    ```bash
+    python scraper.py
+    ```
+
+    This will execute the scraping script and populate the PostgreSQL database with the extracted data.
+
 
