@@ -30,7 +30,9 @@ The script performs the following tasks:
 2. Install dependencies:
 
     ```bash
-    pip install beautifulsoup4 requests psycopg2
+    pip install beautifulsoup4
+	pip install psycopg2
+	pip install requests
     ```
 
     Additionally, ensure that PostgreSQL is installed on your system. If not, follow the [official installation instructions](https://www.postgresql.org/download/).
@@ -49,6 +51,6 @@ The script performs the following tasks:
     python scraper.py
     ```
 
-    This will execute the scraping script and populate the PostgreSQL database with the extracted data.
+    This will execute the scraping script and populate the PostgreSQL database with the extracted data or you can use any interpreter to run the code .
 
 
