@@ -48,6 +48,8 @@ The script performs the following tasks:
     Additionally, ensure that PostgreSQL is installed on your system. If not, follow the [official installation instructions](https://www.postgresql.org/download/).
 	
 4. Change the db object in the 4th line of webscrapping.py as per your PostgresConfigurations .
+   
+   
 3. Run the scraping script:
 
     ```bash
